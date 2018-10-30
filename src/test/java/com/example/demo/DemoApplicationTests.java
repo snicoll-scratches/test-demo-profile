@@ -14,7 +14,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class DemoApplicationTests {
 
 	@Autowired
-	private DemoRepository repository;
+	private SpeakerRepository repository;
 
 	@Test
 	public void contextLoads() {

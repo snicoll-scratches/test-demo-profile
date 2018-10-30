@@ -1,6 +1,7 @@
 package com.example.demo;
 
 import org.springframework.context.annotation.Profile;
+import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -9,10 +10,7 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 @Profile("!repository")
-public class DemoRepository {
+public interface SpeakerRepository extends CrudRepository<Speaker, Long> {
 
-	public String findById(String id) {
-		return "yolo";
-	}
 
 }
